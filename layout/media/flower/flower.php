@@ -69,7 +69,7 @@ function odudecard_product_content($post)
 .ecard-container {
   background-color: <?php odudecard_set_color($post,'#f3f583'); ?>;
   height:97%;
-  background-image: url('<?php echo odudecard_PLUGIN_URL."/layout/media/flower/flower1.png"; ?>');
+  background-image: url('<?php echo PLUGIN_URL."/layout/media/flower/flower1.png"; ?>');
   -webkit-animation: snow 20s linear infinite;
   -moz-animation: snow 20s linear infinite;
   -ms-animation: snow 20s linear infinite;
@@ -230,7 +230,7 @@ input:focus + label {
 	
 
  <div class="modal">
-  <label for="modal" id="odude" ><img src="<?php echo odudecard_PLUGIN_URL."/images/zoom.png"; ?>"></label><br>
+  <label for="modal" id="odude" ><img src="<?php echo PLUGIN_URL."/images/zoom.png"; ?>"></label><br>
   <input id="modal" type="checkbox" name="modal" tabindex="1">
   <div class="modal__overlay">
   <div class="ecard-container">

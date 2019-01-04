@@ -72,7 +72,7 @@ function odudecard_product_content($post)
 .ecard-container {
   background-color:  <?php odudecard_set_color($post,'#000000'); ?>;
   height:97%;
-  background-image: url('<?php echo odudecard_PLUGIN_URL."/layout/media/falling/falling1.png"; ?>'), url('<?php echo odudecard_PLUGIN_URL."/layout/media/falling/falling2.png"; ?>'), url('<?php echo odudecard_PLUGIN_URL."/layout/media/falling/falling3.png"; ?>');
+  background-image: url('<?php echo PLUGIN_URL."/layout/media/falling/falling1.png"; ?>'), url('<?php echo PLUGIN_URL."/layout/media/falling/falling2.png"; ?>'), url('<?php echo PLUGIN_URL."/layout/media/falling/falling3.png"; ?>');
   -webkit-animation: snow 20s linear infinite;
   -moz-animation: snow 20s linear infinite;
   -ms-animation: snow 20s linear infinite;

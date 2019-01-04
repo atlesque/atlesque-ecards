@@ -28,7 +28,7 @@ $settings = maybe_unserialize(get_option('_odudecard_settings'));
             'rewrite' => array('slug'=>'ecard','with_front'=>true),
             'capability_type' => 'post',
             'hierarchical' => false,
-            'menu_icon' =>odudecard_PLUGIN_URL.'/images/odude.png',
+            'menu_icon' =>PLUGIN_URL.'/images/odude.png',
 			//'supports' => array('title','editor','author','excerpt','thumbnail','ptype','comments'/*,'custom-fields'*/) ,            
             'supports' => array('title','editor','card_cate','comments'/*,'custom-fields'*/) ,
             'taxonomies' => array('card_cate'),

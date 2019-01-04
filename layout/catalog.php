@@ -59,8 +59,8 @@ $query = new WP_Query($args);
 
 
 
-if(file_exists(odudecard_BASE_DIR."/layout/grid/".$layout."/".$layout."_up.php"))
-	$output.=include(odudecard_BASE_DIR."/layout/grid/".$layout."/".$layout."_up.php");
+if(file_exists(PLUGIN_BASE_DIR."/layout/grid/".$layout."/".$layout."_up.php"))
+	$output.=include(PLUGIN_BASE_DIR."/layout/grid/".$layout."/".$layout."_up.php");
 	else
 	$output.=__('Layout Not Found','odude-ecard').": ".$layout;
 
@@ -70,15 +70,15 @@ $thetitle=get_the_title();
 //$image=odudecard_image_src('thumbnail',$post);
 $image=odudecard_image_src_custom('medium',$post); 
 
-if(file_exists(odudecard_BASE_DIR."/layout/grid/".$layout."/$layout.php"))
-	$output.=include(odudecard_BASE_DIR."/layout/grid/".$layout."/$layout.php"); 
+if(file_exists(PLUGIN_BASE_DIR."/layout/grid/".$layout."/$layout.php"))
+	$output.=include(PLUGIN_BASE_DIR."/layout/grid/".$layout."/$layout.php"); 
 
 
 
 endwhile;
 
-if(file_exists(odudecard_BASE_DIR."/layout/grid/".$layout."/".$layout."_down.php"))
-	$output.=include(odudecard_BASE_DIR."/layout/grid/".$layout."/".$layout."_down.php");
+if(file_exists(PLUGIN_BASE_DIR."/layout/grid/".$layout."/".$layout."_down.php"))
+	$output.=include(PLUGIN_BASE_DIR."/layout/grid/".$layout."/".$layout."_down.php");
 
 
 

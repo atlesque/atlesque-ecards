@@ -18,7 +18,7 @@ add_action( 'init', 'odudecard_image_setup' );
 	if (is_admin()) 
 {
 	
-	//wp_enqueue_script('post_img', odudecard_PLUGIN_URL.'/js/post_img.js');
+	//wp_enqueue_script('post_img', PLUGIN_URL.'/js/post_img.js');
 	add_action('admin_init', 'odudecard_meta_boxes', 0);
 	add_action('save_post', 'odudecard_save_meta_data', 10, 2);
 	add_action( 'admin_menu', 'odudecard_add_admin_menu' );

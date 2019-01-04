@@ -3,7 +3,7 @@
 
 function odudecard_product_content($post)
 {
-	require_once(odudecard_BASE_DIR."/layout/media/header.php");
+	require_once(PLUGIN_BASE_DIR."/layout/media/header.php");
 	$abc="";
 	 $home = home_url('/');
 	ob_start ();

@@ -56,7 +56,7 @@ ob_start ();
 .ecard-container {
   background-color: <?php odudecard_set_color($post,'#f3f583'); ?>;
   height:97%;
-  background-image: url('<?php echo odudecard_PLUGIN_URL."/layout/media/flower/flower1.png"; ?>');
+  background-image: url('<?php echo PLUGIN_URL."/layout/media/flower/flower1.png"; ?>');
   -webkit-animation: snow 20s linear infinite;
   -moz-animation: snow 20s linear infinite;
   -ms-animation: snow 20s linear infinite;

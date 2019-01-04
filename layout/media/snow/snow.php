@@ -80,7 +80,7 @@ function odudecard_product_content($post)
 
 .ecard-container {
   background-color: <?php odudecard_set_color($post,'#6b92b9'); ?>;
-  background-image: url('<?php echo odudecard_PLUGIN_URL."/layout/media/snow/snow1.png"; ?>'), url('<?php echo odudecard_PLUGIN_URL."/layout/media/snow/snow2.png"; ?>'), url('<?php echo odudecard_PLUGIN_URL."/layout/media/snow/snow3.png"; ?>');
+  background-image: url('<?php echo PLUGIN_URL."/layout/media/snow/snow1.png"; ?>'), url('<?php echo PLUGIN_URL."/layout/media/snow/snow2.png"; ?>'), url('<?php echo PLUGIN_URL."/layout/media/snow/snow3.png"; ?>');
   -webkit-animation: snow 20s linear infinite;
   -moz-animation: snow 20s linear infinite;
   -ms-animation: snow 20s linear infinite;

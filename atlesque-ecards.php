@@ -13,8 +13,8 @@ Text Domain: atlesque-ecards
    
 	define('ROOT_URL', plugin_dir_url( __FILE__ ) );
 	define('PLUGIN_DIR',dirname(plugin_basename( __FILE__ )));
-	define('odudecard_BASE_DIR',WP_CONTENT_DIR.'/plugins/'.PLUGIN_DIR.'/');
-	define('odudecard_PLUGIN_URL',content_url('/plugins/'.PLUGIN_DIR));
+	define('PLUGIN_BASE_DIR',WP_CONTENT_DIR.'/plugins/'.PLUGIN_DIR.'/');
+	define('PLUGIN_URL',content_url('/plugins/'.PLUGIN_DIR));
 	include(dirname(__FILE__)."/help.php");
 	include(dirname(__FILE__)."/stat.php");
 	
@@ -280,7 +280,7 @@ function odudecard_the_content($content)
 			else
 			$ecard_layout="basic";
 		   
-		   if(file_exists(odudecard_BASE_DIR."/layout/media/$ecard_layout/$ecard_layout.php"))
+		   if(file_exists(PLUGIN_BASE_DIR."/layout/media/$ecard_layout/$ecard_layout.php"))
 		   {
 			   
 			   
@@ -302,7 +302,7 @@ function odudecard_the_content($content)
 		//{
 			//pending_cards();
 		//}
-    $abc=include(odudecard_BASE_DIR.'layout/catalog.php');
+    $abc=include(PLUGIN_BASE_DIR.'layout/catalog.php');
 	return $abc;
 	 
 	}
@@ -310,7 +310,7 @@ function odudecard_the_content($content)
 	//pickup ecards
 	function odudecard_pick($params)
 	{
-		$abc=include(odudecard_BASE_DIR.'layout/pick.php');
+		$abc=include(PLUGIN_BASE_DIR.'layout/pick.php');
 	return $abc;
 	}
 	
@@ -324,7 +324,7 @@ function odudecard_the_content($content)
 			else
 			$ecard_layout="basic";
 		
-		$dir    = odudecard_BASE_DIR.'layout/media/';
+		$dir    = PLUGIN_BASE_DIR.'layout/media/';
 		$filelist ="";
 		$files = array_map("htmlspecialchars", scandir($dir));       
 
