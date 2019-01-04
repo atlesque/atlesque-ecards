@@ -40,12 +40,15 @@ register_uninstall_hook(__FILE__,'odudecard_drop');
 
 
 	//Adding meta boxes
-function odudecard_meta_boxes()
-{
-  $prefix = 'odudecard_';
-
+function odudecard_meta_boxes() {
   $meta_boxes = array(
-    'post_img'=>array('id'=> $prefix.'image','title'=>__('Ecard Image',"odudecard"),'callback'=>'odudecard_meta_box_image','position'=>'advanced','priority'=>'high'),
+    'post_img'=>array(
+      'id' => 'ecard-image-selector',
+      'title'=>__('Ecard Image',"odudecard"),
+      'callback'=>'odudecard_meta_box_image',
+      'position'=>'advanced',
+      'priority'=>'high'
+    ),
 
     'odudecard-author'=>array('title'=>__('Ecard Auteur',"odudecard"),'callback'=>'odudecard_meta_box_author','position'=>'advanced','priority'=>'high'),
 

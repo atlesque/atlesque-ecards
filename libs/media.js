@@ -39,7 +39,7 @@ jQuery( function ( $ ) {
 			// set preview
 			var img = '<img src="' + attachment.url + '" style="max-width:100%;" />';
 
-			$this.next( 'input' ).next( '.image-preview' ).html( img );
+			$this.next( 'input' ).next( '.ecard-editor__image-preview' ).html( img );
 
 		} );
 
@@ -55,7 +55,7 @@ jQuery( function ( $ ) {
 		var $this = $( this ),
 			id = $this.prev( 'input' ).attr( 'id' );
 
-		$this.next( '.image-preview' ).html( '' );
+		$this.next( '.ecard-editor__image-preview' ).html( '' );
 
 		// $this.next( 'br' ).next( 'img' ).remove();
 
