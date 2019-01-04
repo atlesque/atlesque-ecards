@@ -1,0 +1,385 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: odude-ecard\n"
+"POT-Creation-Date: 2016-09-09 14:56+0545\n"
+"PO-Revision-Date: 2016-09-09 14:57+0545\n"
+"Last-Translator: \n"
+"Language-Team: ODude Network <navneet@odude.com>\n"
+"Language: bs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;esc_html_e;esc_html__;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: layout/catalog.php:65
+msgid "Layout Not Found"
+msgstr "Izgled nije pronaðen"
+
+#: layout/class-pick.php:52 layout/media/compose.php:55
+msgid "Email This Ecard"
+msgstr "Podijelite ovu Ecard"
+
+#: layout/class-pick.php:59
+msgid "Modify"
+msgstr "izmijeniti"
+
+#: layout/media/basic/basic_pick.php:2 layout/media/falling/falling_pick.php:2
+#: layout/media/snow/snow_pick.php:2
+msgid "From"
+msgstr "od"
+
+#: layout/media/basic/basic_pick.php:18
+#: layout/media/falling/falling_pick.php:250 layout/media/snow/snow_pick.php:95
+msgid "Send this Ecard to others"
+msgstr "Pošalji ovu razglednicu drugima"
+
+#: layout/media/compose.php:4
+msgid "Your Name"
+msgstr "Vaše ime"
+
+#: layout/media/compose.php:4
+msgid "Your Email"
+msgstr "Vaš email"
+
+#: layout/media/compose.php:6 layout/media/submit.php:70
+msgid "Receiver Name"
+msgstr "Ime primaoca"
+
+#: layout/media/compose.php:6 layout/media/submit.php:70
+msgid "Receiver E-Mail"
+msgstr "Email primaoca"
+
+#: layout/media/compose.php:8
+msgid "Subject"
+msgstr "Predmet"
+
+#: layout/media/compose.php:40
+msgid "Message"
+msgstr "Poruka"
+
+#: layout/media/compose.php:48
+msgid "Send card on specific date:"
+msgstr "Pošalji razglednicu na datum:"
+
+#: layout/media/compose.php:57
+msgid "Preview Ecard"
+msgstr "Pregledaj razglednicu prije slanja"
+
+#: layout/media/submit.php:30
+msgid "Please enter a valid email address"
+msgstr "Molimo Vas unesite validnu email adresu"
+
+#: layout/media/submit.php:32
+msgid "Name cannot be empty"
+msgstr "Ime ne može biti prazno"
+
+#: layout/media/submit.php:34
+msgid "Please enter your subject"
+msgstr "Molimo Vas unesite predmet"
+
+#: layout/media/submit.php:36
+msgid "Please enter a longer message"
+msgstr "Molimo Vas unesite poruku"
+
+#: layout/media/submit.php:52 layout/media/submit.php:97
+msgid "Go Back"
+msgstr "Idite nazad"
+
+#: layout/media/submit.php:69
+msgid "Ecard Has been sent Sucessfully"
+msgstr "Razglednica je uspješno poslata"
+
+#: layout/media/submit.php:91
+msgid "Send to Others"
+msgstr "Pošalji drugima"
+
+#: layout/pick.php:47
+msgid "Either card is deleted or wrong Pickup ID provided"
+msgstr "Ili je razglednica izbrisana ili je broj pogrešan"
+
+#: libs/custom_column.php:7
+msgid "Title"
+msgstr "Naslov"
+
+#: libs/custom_column.php:8
+msgid "Author"
+msgstr "Autor"
+
+#: libs/custom_column.php:9
+msgid "Category"
+msgstr "Kategorija"
+
+#: libs/custom_column.php:10 odude-ecard.php:47
+msgid "Ecard Layout"
+msgstr "Izgled razglednice"
+
+#: libs/custom_column.php:11
+msgid "Thumbnail"
+msgstr "Slièica"
+
+#: libs/custom_column.php:12
+msgid ""
+"<span class=\"vers\"><div title=\"Comments\" class=\"comment-grey-bubble\"></"
+"div></span>"
+msgstr ""
+"<span class=\"vers\"><div title=\"Komentari\" class=\"comment-grey-bubble"
+"\"></div></span>"
+
+#: libs/custom_column.php:13
+msgid "Date"
+msgstr "Datum"
+
+#: libs/custom_column.php:68
+msgid "--"
+msgstr "--"
+
+#: libs/install.php:11
+msgid "ODude ECard"
+msgstr "Odude razglednice"
+
+#: libs/install.php:12
+msgid "Ecard"
+msgstr "Razglednica"
+
+#: libs/install.php:13
+msgid "Add "
+msgstr "Dodaj"
+
+#: libs/install.php:14
+msgid "Add New "
+msgstr "Dodaj novu"
+
+#: libs/install.php:15
+msgid "Edit "
+msgstr "Uredi"
+
+#: libs/install.php:16
+msgid "New "
+msgstr "Nova"
+
+#: libs/install.php:17
+msgid "View Ecard"
+msgstr "Pogledaj razglednicu"
+
+#: libs/install.php:18
+msgid "Search Ecard"
+msgstr "Traži razglednicu"
+
+#: libs/install.php:19
+msgid "No Ecard found"
+msgstr "Nije naðena razglednica"
+
+#: libs/install.php:20
+msgid "No ecard found in Trash"
+msgstr "Razglednica nije naðena u smeæu"
+
+#: libs/install.php:51 libs/install.php:61
+msgid "Ecard Albums"
+msgstr "Albumi razglednica"
+
+#: libs/install.php:52
+msgid "Ecard Album"
+msgstr "Album razglednica"
+
+#: libs/install.php:53
+msgid "Search Albums"
+msgstr "Traži albume"
+
+#: libs/install.php:54
+msgid "All Albums"
+msgstr "Svi albumi"
+
+#: libs/install.php:55
+msgid "Parent Album"
+msgstr "Krovni album"
+
+#: libs/install.php:56
+msgid "Parent Album:"
+msgstr "Roditelj Album:"
+
+#: libs/install.php:57
+msgid "Edit Album"
+msgstr "Uredi album"
+
+#: libs/install.php:58
+msgid "Update Album"
+msgstr "Ažuriraj album"
+
+#: libs/install.php:59
+msgid "Add New Album"
+msgstr "Dodaj novi album"
+
+#: libs/install.php:60
+msgid "New Album Name"
+msgstr "Ime novog albuma"
+
+#: libs/install.php:74 libs/install.php:84
+msgid "Ecard Tags"
+msgstr "Tagovi razglednica"
+
+#: libs/install.php:75
+msgid "Ecard Tag"
+msgstr "Tag razglednice"
+
+#: libs/install.php:76
+msgid "Search Tags"
+msgstr "Traži tagove"
+
+#: libs/install.php:77
+msgid "All Tags"
+msgstr "Svi tagovi"
+
+#: libs/install.php:78
+msgid "Parent Tag"
+msgstr "Krovni tag"
+
+#: libs/install.php:79
+msgid "Parent Tag:"
+msgstr "Krovni tag"
+
+#: libs/install.php:80
+msgid "Edit Tag"
+msgstr "uredi tag"
+
+#: libs/install.php:81
+msgid "Update Tag"
+msgstr "Ažuriraj tag"
+
+#: libs/install.php:82
+msgid "Add New Tag"
+msgstr "Dodaj novi tag"
+
+#: libs/install.php:83
+msgid "New Tag Name"
+msgstr "Ime novog taga"
+
+#: libs/lib.php:55
+msgid "Please Complete the Security Spam Check."
+msgstr "Molimo Vas završite Spam provjeru"
+
+#: libs/lib.php:60
+msgid "Google Server Error"
+msgstr "Greška na Google serveru"
+
+#: libs/lib.php:66
+msgid ""
+"Bots are not allowed to send ecards. If you are not a bot then please enable "
+"JavaScript in browser."
+msgstr ""
+"Botovima nije dozvoljeno slanje razglednica. Ako niste bot onda molimo "
+"upaliteJavascript u pregledniku"
+
+#: odude-ecard.php:46
+msgid "Ecard Image"
+msgstr "Slika razglednice"
+
+#: setting.php:20
+msgid "Settings"
+msgstr "Postavke"
+
+#: setting.php:26
+msgid "Free Settings"
+msgstr "Besplatne postavke"
+
+#: setting.php:33
+msgid "Pro Settings"
+msgstr "Pro postavke"
+
+#: setting.php:45
+msgid "Captcha Settings"
+msgstr "Captcha postavke"
+
+#: setting.php:53
+msgid "Google Captcha Enable"
+msgstr "Upali google captcha"
+
+#: setting.php:61
+msgid "Google Captcha API Key"
+msgstr "Google Captcha API Key"
+
+#: setting.php:68
+msgid "Google Captcha secret Key"
+msgstr "Google Captcha secret Key"
+
+#: setting.php:81
+msgid "3rd Party Shortcode"
+msgstr "Tuði shortcode"
+
+#: setting.php:88
+msgid "Shortcode for Position 1st"
+msgstr "Shortcode za prvu poziciju"
+
+#: setting.php:95
+msgid "Shortcode for Position 2nd"
+msgstr "Shortcode za drugu poziciju"
+
+#: setting.php:115 setting.php:446
+msgid "Statistics"
+msgstr "Statistika"
+
+#: setting.php:193
+msgid ""
+"You can include any other plugin shortcode or message. Eg. social share, "
+"buttons, notices<br><br><b>Position 1st</b> = Just above the main ecard "
+"image<br><b>Position 2nd</b>=Just below the main ecard image.<br>"
+msgstr ""
+"Možete ukljuèiti shortcode bilo kojeg plugina ili poruke. Npr, social share,"
+"dugmad, obavještenja <br><br><b>Prva pozicija</b> = Odmah iznad glavne "
+"razglednice slika<br><b>Druga pozicija</b>= Odmah ispod glavne razglednice."
+"<br>"
+
+#: setting.php:226
+msgid "&mdash; Select &mdash;"
+msgstr "&mdash; Izaberi &mdash;"
+
+#: setting.php:320
+msgid "This is captcha setting page"
+msgstr "Ovo je stranica za captcha postavke"
+
+#: setting.php:329
+msgid "Last 50 Ecards Sent"
+msgstr "Zadnjih 50 poslatih razglednica"
+
+#: setting.php:367
+msgid "Next 50 Ecards Pending"
+msgstr "Slijedeæih 50 poslatih razglednica"
+
+#: setting.php:447
+msgid "Basic Settings"
+msgstr "Osnovne postavke"
+
+#: setting.php:448
+msgid "Google reCaptcha V2"
+msgstr "Google reCaptcha V2"
+
+#: setting.php:449
+msgid "Any Plugin Shortcode"
+msgstr "Shortcode bilo kojeg plugina"
+
+#~ msgid "Send This Ecard"
+#~ msgstr "Pošalji ovu razglednicu"
+
+#~ msgid "Go Back to Modify"
+#~ msgstr "Idi nazad na ureðivanje"
+
+#~ msgid "No product found"
+#~ msgstr "Proizvod nije naðen"
+
+#~ msgid "No product found in Trash"
+#~ msgstr "Proizvod nije naðen u smeæu"
+
+#~ msgid "Send this Ecard to other"
+#~ msgstr "Pošalji ovu razglednicu drugima"
+
+#~ msgid "Send to Other"
+#~ msgstr "Pošalji drugima"
+
+#~ msgid "Select Pickup Page"
+#~ msgstr "Izaberi stranicu za pregledanje razglednice"
+
+#~ msgid "Update or modify required settings."
+#~ msgstr "Ažuriraj ili uredi potrebne postavke"

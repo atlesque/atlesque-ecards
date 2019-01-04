@@ -1,20 +1,20 @@
 <?php
 /*
-Plugin Name: Atlesque Ecards
-Plugin URI: https://atlesque.com/
-Description: Manage ecards and send them to others.
-Version: 1.0
-Author: Alexander Atlesque
-Author URI: https://atlesque.com/
-License: MIT
-Text Domain: atlesque-ecards
+Plugin Name: ODude Ecard
+Plugin URI: http://odude.com/
+Description: ODude Ecard to make a complete greetings card site.
+Version: 1.4.4
+Author: ODude Network
+Author URI: http://odude.com/
+License: GPLv2 or later
+Text Domain: odude-ecard
 */
 
    
 	define('odudecard_ROOT_URL', plugin_dir_url( __FILE__ ) );
-	define('PLUGIN_DIR',dirname(plugin_basename( __FILE__ )));
-	define('odudecard_BASE_DIR',WP_CONTENT_DIR.'/plugins/'.PLUGIN_DIR.'/');
-	define('odudecard_PLUGIN_URL',content_url('/plugins/'.PLUGIN_DIR));
+	define('odudecard_FOLDER',dirname(plugin_basename( __FILE__ )));
+	define('odudecard_BASE_DIR',WP_CONTENT_DIR.'/plugins/'.odudecard_FOLDER.'/');
+	define('odudecard_PLUGIN_URL',content_url('/plugins/'.odudecard_FOLDER));
 	include(dirname(__FILE__)."/help.php");
 	include(dirname(__FILE__)."/stat.php");
 	
@@ -154,10 +154,10 @@ Text Domain: atlesque-ecards
 	  
 		 
         
-		 // wp_enqueue_style('odudecard-style', plugins_url() .'/'. PLUGIN_DIR.'/css/style.css');
-     wp_enqueue_style('odude-pure', plugins_url() .'/'. PLUGIN_DIR.'/css/pure-min.css');
+		 // wp_enqueue_style('odudecard-style', plugins_url() .'/'. odudecard_FOLDER.'/css/style.css');
+     wp_enqueue_style('odude-pure', plugins_url() .'/'. odudecard_FOLDER.'/css/pure-min.css');
 		 // wp_enqueue_style('font-awesome-css','https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-		 wp_enqueue_style('odude-pure-grid', plugins_url().'/'. PLUGIN_DIR.'/css/grids-responsive-min.css');
+		 wp_enqueue_style('odude-pure-grid', plugins_url().'/'. odudecard_FOLDER.'/css/grids-responsive-min.css');
 		 // wp_enqueue_style('jquery-ui-style','https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css');
 	  
 	   if(isset($options['odudecard_text_captcha_enable']))
@@ -173,9 +173,9 @@ Text Domain: atlesque-ecards
 		//echo $screen->base;
 		if ( $screen->base == 'odudecard_page_odude_ecard' || $screen->base=='odudecard_page_odude_ecard_stat' || $screen->base=='odudecard_page_odude_ecard_help')
 		{
-			wp_enqueue_style('odude-pure', plugins_url() .'/'. PLUGIN_DIR.'/css/pure-min.css');
+			wp_enqueue_style('odude-pure', plugins_url() .'/'. odudecard_FOLDER.'/css/pure-min.css');
 		 wp_enqueue_style('font-awesome-css','https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-		 wp_enqueue_style('odude-pure-grid', plugins_url().'/'. PLUGIN_DIR.'/css/grids-responsive-min.css');
+		 wp_enqueue_style('odude-pure-grid', plugins_url().'/'. odudecard_FOLDER.'/css/grids-responsive-min.css');
 		 
 		}
 		wp_enqueue_script('jquery');
@@ -189,7 +189,7 @@ Text Domain: atlesque-ecards
 		wp_enqueue_script( 'wp-color-picker');
 		
 		$options = get_option( 'odudecard_settings','' );
-		wp_enqueue_style('odudecard-style', plugins_url() .'/'. PLUGIN_DIR.'/css/aristo.css');
+		wp_enqueue_style('odudecard-style', plugins_url() .'/'. odudecard_FOLDER.'/css/aristo.css');
 	}
 	
 	//Save data typed in post type
