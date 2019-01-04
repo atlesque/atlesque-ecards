@@ -1,0 +1,4 @@
+.wp-admin.post-php .image-preview img {
+  max-height: 50vh;
+  width: auto;
+}
