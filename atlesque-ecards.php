@@ -11,7 +11,7 @@ Text Domain: atlesque-ecards
 */
 
    
-	define('odudecard_ROOT_URL', plugin_dir_url( __FILE__ ) );
+	define('ROOT_URL', plugin_dir_url( __FILE__ ) );
 	define('PLUGIN_DIR',dirname(plugin_basename( __FILE__ )));
 	define('odudecard_BASE_DIR',WP_CONTENT_DIR.'/plugins/'.PLUGIN_DIR.'/');
 	define('odudecard_PLUGIN_URL',content_url('/plugins/'.PLUGIN_DIR));
