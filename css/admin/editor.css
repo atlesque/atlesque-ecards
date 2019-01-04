@@ -1,4 +1,8 @@
-.wp-admin.post-php .image-preview img {
+.ecard-editor__image-preview {
+  margin-top: 1em;
+}
+
+.ecard-editor__image-preview img {
   max-height: 50vh;
   width: auto;
 }
