@@ -8,8 +8,11 @@ $value = esc_attr( $name );
 ?>
 
 <input type='hidden' id='<?= $name ?>-value' class='small-text' name='meta-box-media[<?= $name ?>]' value='<?= $value ?>' />
-<input type='button' id='<?= $name ?>' class='button meta-box-upload-button' value='Upload' />
-<input type='button' id='<?= $name ?>-remove' class='button meta-box-upload-button-remove' value='Remove' />
+
+<div class="ecard-editor__file-buttons">
+	<input type='button' id='<?= $name ?>' class='button meta-box-upload-button' value='<?= __('Upload', 'atlesque-ecards') ?>' />
+	<input type='button' id='<?= $name ?>-remove' class='button meta-box-upload-button-remove' value='<?= __('Remove', 'atlesque-ecards') ?>' />
+</div>
 
 <div class='ecard-editor__image-preview'>
 	<?= ! $rawvalue ? '' : wp_get_attachment_image( $rawvalue, 'full', false, array('style' => 'max-width:100%;height:auto;') ); ?>

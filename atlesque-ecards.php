@@ -44,7 +44,7 @@ function odudecard_meta_boxes() {
   $meta_boxes = array(
     'post_img'=>array(
       'id' => 'ecard-image-selector',
-      'title'=>__('Ecard Image',"odudecard"),
+      'title'=>__('E-Card Image', 'atlesque-ecards'),
       'callback'=>'odudecard_meta_box_image',
       'position'=>'advanced',
       'priority'=>'high'

@@ -1,5 +1,11 @@
-.ecard-editor__image-preview {
+.ecard-editor__file-buttons {
   margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.ecard-editor__file-buttons input:not(:last-child) {
+  margin-right: 1em;
 }
 
 .ecard-editor__image-preview img {
