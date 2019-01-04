@@ -1,0 +1,102 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Atlesque Ecards\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-04 23:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.2"
+
+#: atlesque-ecards.php:47
+msgid "Image"
+msgstr ""
+
+#: atlesque-ecards.php:53
+msgid "Author"
+msgstr ""
+
+#: atlesque-ecards.php:59
+msgid "Layout"
+msgstr ""
+
+#: atlesque-ecards.php:65
+msgid "Music"
+msgstr ""
+
+#: atlesque-ecards.php:71
+msgid "Background Color"
+msgstr ""
+
+#: libs/post_img.php:13
+msgid "Upload"
+msgstr ""
+
+#: libs/post_img.php:14
+msgid "Remove"
+msgstr ""
+
+#: layout/media/compose.php:38 layout/media/compose.php:112
+msgid "Your Name"
+msgstr ""
+
+#: layout/media/compose.php:38 layout/media/compose.php:112
+msgid "Your Email"
+msgstr ""
+
+#: layout/media/compose.php:41 layout/media/compose.php:116
+msgid "Subject"
+msgstr ""
+
+#: layout/media/compose.php:74 layout/media/compose.php:120
+#: layout/media/compose.php:148
+msgid "Message"
+msgstr ""
+
+#: layout/media/compose.php:82
+msgid "Prepare to Send"
+msgstr ""
+
+#: layout/media/compose.php:114
+msgid "Receiver Name"
+msgstr ""
+
+#: layout/media/compose.php:114
+msgid "Receiver E-Mail"
+msgstr ""
+
+#: layout/media/compose.php:156
+msgid "Send card on specific date:"
+msgstr ""
+
+#: layout/media/compose.php:163
+msgid "Email This Ecard"
+msgstr ""
+
+#: layout/media/compose.php:165
+msgid "Preview Ecard"
+msgstr ""
+
+#. Name of the plugin
+msgid "Atlesque Ecards"
+msgstr ""
+
+#. Description of the plugin
+msgid "Manage ecards and send them to others."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://atlesque.com/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Alexander Atlesque"
+msgstr ""

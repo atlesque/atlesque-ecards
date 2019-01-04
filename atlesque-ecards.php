@@ -23,7 +23,7 @@ include(dirname(__FILE__)."/stat.php");
 
 function odudecard_languages() 
 {
-  load_plugin_textdomain( 'odude-ecard', false, dirname(plugin_basename( __FILE__ )).'/languages/' ); 
+  load_plugin_textdomain( 'atlesque-ecards', false, dirname(plugin_basename( __FILE__ )).'/languages/' ); 
 }
 
 include(dirname(__FILE__)."/libs/functions.php");

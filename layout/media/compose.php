@@ -35,10 +35,10 @@
 		?>
 		<form class="pure-form pure-form-stacked" method="post">
 	<div class="pure-g">
-	<div class="pure-u-1-2"><?php esc_html_e( 'Your Name', 'odude-ecard' ); ?></div><div class="pure-u-1-2"><?php esc_html_e( 'Your Email', 'odude-ecard' ); ?></div>
+	<div class="pure-u-1-2"><?php esc_html_e( 'Your Name', 'atlesque-ecards' ); ?></div><div class="pure-u-1-2"><?php esc_html_e( 'Your Email', 'atlesque-ecards' ); ?></div>
 	<div class="pure-u-1-2"> <input id="SN" name="SN" class="pure-u-1" type="text" required></div><div class="pure-u-1-2"><input id="SE" name="SE" class="pure-u-1" type="email" required></div>
 	
-	<div class="pure-u-1-1"><?php esc_html_e( 'Subject', 'odude-ecard' ); ?>: <input id="sub" name="sub" class="pure-u-1-1 pure-input-rounded" type="text" required><br></div>
+	<div class="pure-u-1-1"><?php esc_html_e( 'Subject', 'atlesque-ecards' ); ?>: <input id="sub" name="sub" class="pure-u-1-1 pure-input-rounded" type="text" required><br></div>
 	
 	
 	<div class="pure-u-1-1">
@@ -71,7 +71,7 @@
 			{ 
 		?>
 	
-	<?php esc_html_e( 'Message', 'odude-ecard' ); ?>:<br> <textarea id="body" name="body" class="pure-u-1" placeholder="" rows="4" cols="50"></textarea>
+	<?php esc_html_e( 'Message', 'atlesque-ecards' ); ?>:<br> <textarea id="body" name="body" class="pure-u-1" placeholder="" rows="4" cols="50"></textarea>
 	
 	
 	<?php
@@ -79,7 +79,7 @@
 	?>
 	</div>
 	
-	<div class="pure-u-1-1 pure-u-md-1-2"><button type="submit" class="pure-button" name="facebook" id="facebook" formaction="<?php echo $linku; ?>"><i class="fa fa-facebook-official"></i> <?php esc_html_e( 'Prepare to Send', 'odude-ecard' ); ?></button> <input type="hidden" name="cardid" value="<?php echo $cardid; ?>"></div>
+	<div class="pure-u-1-1 pure-u-md-1-2"><button type="submit" class="pure-button" name="facebook" id="facebook" formaction="<?php echo $linku; ?>"><i class="fa fa-facebook-official"></i> <?php esc_html_e( 'Prepare to Send', 'atlesque-ecards' ); ?></button> <input type="hidden" name="cardid" value="<?php echo $cardid; ?>"></div>
 	
 	
 	</div>
@@ -109,15 +109,15 @@
 		?>
 	<form class="pure-form pure-form-stacked" method="post">
 	<div class="pure-g">
-	<div class="pure-u-1-2"><?php esc_html_e( 'Your Name', 'odude-ecard' ); ?></div><div class="pure-u-1-2"><?php esc_html_e( 'Your Email', 'odude-ecard' ); ?></div>
+	<div class="pure-u-1-2"><?php esc_html_e( 'Your Name', 'atlesque-ecards' ); ?></div><div class="pure-u-1-2"><?php esc_html_e( 'Your Email', 'atlesque-ecards' ); ?></div>
 	<div class="pure-u-1-2"> <input id="SN" name="SN" class="pure-u-1" type="text" required></div><div class="pure-u-1-2"><input id="SE" name="SE" class="pure-u-1" type="email" required></div>
-	<div class="pure-u-1-2"><?php esc_html_e( 'Receiver Name', 'odude-ecard' ); ?></div><div class="pure-u-1-2"><?php esc_html_e( 'Receiver E-Mail', 'odude-ecard' ); ?></div>
+	<div class="pure-u-1-2"><?php esc_html_e( 'Receiver Name', 'atlesque-ecards' ); ?></div><div class="pure-u-1-2"><?php esc_html_e( 'Receiver E-Mail', 'atlesque-ecards' ); ?></div>
 	<div class="pure-u-1-2">  <input id="RN" name="RN" class="pure-u-1" type="text" required></div> <div class="pure-u-1-2"> <input id="RE" name="RE" class="pure-u-1" type="email" required></div>
-	<div class="pure-u-1-1"><?php esc_html_e( 'Subject', 'odude-ecard' ); ?>: <input id="sub" name="sub" class="pure-u-1-1 pure-input" type="text" ></div>
+	<div class="pure-u-1-1"><?php esc_html_e( 'Subject', 'atlesque-ecards' ); ?>: <input id="sub" name="sub" class="pure-u-1-1 pure-input" type="text" ></div>
 	
 	
 	<div class="pure-u-1-1">
-	<span class='odude-form-label'><?php esc_html_e( 'Message', 'odude-ecard' ); ?>:</span>
+	<span class='odude-form-label'><?php esc_html_e( 'Message', 'atlesque-ecards' ); ?>:</span>
 	<?php if ($editor) 
 		   { ?>
 				
@@ -145,7 +145,7 @@
 			{ 
 		?>
 	
-	<?php esc_html_e( 'Message', 'odude-ecard' ); ?>:<br> <textarea id="body" name="body" class="pure-u-1" placeholder="" rows="4" cols="50"></textarea>
+	<?php esc_html_e( 'Message', 'atlesque-ecards' ); ?>:<br> <textarea id="body" name="body" class="pure-u-1" placeholder="" rows="4" cols="50"></textarea>
 	
 	
 	<?php
@@ -153,16 +153,16 @@
 	?>
 	</div>
 	
-	<div class="pure-u-1-1" ><?php if($futuredate!="")esc_html_e( 'Send card on specific date:', 'odude-ecard' ); ?><?php echo $futuredate; ?></div>
+	<div class="pure-u-1-1" ><?php if($futuredate!="")esc_html_e( 'Send card on specific date:', 'atlesque-ecards' ); ?><?php echo $futuredate; ?></div>
 	
 	
 	<div class="pure-u-1-1" style="text-align:center;"><?php echo $captcha; ?></div>
 	
 	<div class="pure-u-1-1 pure-u-md-1-2">  <button type="submit" class="pure-button pure-button-primary">
 	<i class="fa fa-envelope"></i> 	
-	<?php esc_html_e( 'Email This Ecard', 'odude-ecard' ); ?></button></div>
+	<?php esc_html_e( 'Email This Ecard', 'atlesque-ecards' ); ?></button></div>
 	
-	<div class="pure-u-1-1 pure-u-md-1-2"><button type="submit" class="pure-button" name="preview" id="preview" formaction="<?php echo $linku; ?>"><i class="fa fa-eye"></i> <?php esc_html_e( 'Preview Ecard', 'odude-ecard' ); ?></button> <input type="hidden" name="cardid" value="<?php echo $cardid; ?>"></div>
+	<div class="pure-u-1-1 pure-u-md-1-2"><button type="submit" class="pure-button" name="preview" id="preview" formaction="<?php echo $linku; ?>"><i class="fa fa-eye"></i> <?php esc_html_e( 'Preview Ecard', 'atlesque-ecards' ); ?></button> <input type="hidden" name="cardid" value="<?php echo $cardid; ?>"></div>
 	
 	
 	</div>
