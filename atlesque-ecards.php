@@ -189,7 +189,7 @@ Text Domain: atlesque-ecards
 		wp_enqueue_script( 'wp-color-picker');
 		
 		$options = get_option( 'odudecard_settings','' );
-		wp_enqueue_style('odudecard-style', plugins_url() .'/'. PLUGIN_DIR.'/css/aristo.css');
+		// wp_enqueue_style('odudecard-style', plugins_url() .'/'. PLUGIN_DIR.'/css/aristo.css');
 	}
 	
 	//Save data typed in post type
@@ -342,7 +342,7 @@ echo $filelist;
    
 	}
 	
-	//Adding popup button
+/*	//Adding popup button
 	
 	// Hooks your functions into the correct filters
 function odudecard_add_mce_button() 
@@ -373,7 +373,7 @@ function odudecard_register_mce_button( $buttons )
 {
 	array_push( $buttons, 'odudecard_mce_button' );
 	return $buttons;
-}
+}*/
 	
 //change Pickup Page title
 add_action('loop_start','odudecard_filter_title');
