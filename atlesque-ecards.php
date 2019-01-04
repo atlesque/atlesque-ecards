@@ -42,22 +42,37 @@ register_uninstall_hook(__FILE__,'odudecard_drop');
 	//Adding meta boxes
 function odudecard_meta_boxes() {
   $meta_boxes = array(
-    'post_img'=>array(
+    'post_img' => array(
       'id' => 'ecard-image-selector',
-      'title'=>__('E-Card Image', 'atlesque-ecards'),
-      'callback'=>'odudecard_meta_box_image',
-      'position'=>'advanced',
-      'priority'=>'high'
+      'title' => __('Image', 'atlesque-ecards'),
+      'callback' => 'odudecard_meta_box_image',
+      'position' => 'advanced',
+      'priority' => 'high'
     ),
-
-    'odudecard-author'=>array('title'=>__('Ecard Auteur',"odudecard"),'callback'=>'odudecard_meta_box_author','position'=>'advanced','priority'=>'high'),
-
-    'odudecard-layout'=>array('title'=>__('Ecard Layout',"odudecard"),'callback'=>'odudecard_meta_box_layout','position'=>'side','priority'=>'core'),
-
-    'odudecard-music'=>array('title'=>__('Select Music',"odudecard"),'callback'=>'odudecard_meta_box_music','position'=>'side','priority'=>'core'),
-
-    'odudecard-color'=>array('title'=>__('Background Color',"odudecard"),'callback'=>'odudecard_meta_box_color','position'=>'side','priority'=>'core'),
-
+    'odudecard-author' => array(
+      'title' => __('Author', 'atlesque-ecards'),
+      'callback' => 'odudecard_meta_box_author',
+      'position' => 'advanced',
+      'priority' => 'high'
+    ),
+    'odudecard-layout '=> array(
+      'title' => __('Layout', 'atlesque-ecards'),
+      'callback' => 'odudecard_meta_box_layout',
+      'position' => 'side',
+      'priority' => 'core'
+    ),
+    'odudecard-music' => array(
+      'title' => __('Music', 'atlesque-ecards'),
+      'callback' => 'odudecard_meta_box_music',
+      'position' => 'side',
+      'priority' => 'core'
+    ),
+    'odudecard-color '=> array(
+      'title' => __('Background Color', 'atlesque-ecards'),
+      'callback' => 'odudecard_meta_box_color',
+      'position' => 'side',
+      'priority' => 'core'
+    )
   );
 
 
