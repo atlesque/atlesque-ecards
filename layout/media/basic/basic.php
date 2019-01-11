@@ -4,9 +4,6 @@ function atlesque_ecard_product_content($post) {
 	$ecard_author = get_post_meta($post->ID, "ecard_author")[0];
 	$editor = true;
 	$captcha = "";
-	$options = get_option( 'atlesque_ecard_settings', '' );
-	echo $options['atlesque_ecard_select_pickup_field'];
-	$linku = esc_url( get_permalink($options['atlesque_ecard_select_pickup_field']) );
 
 	require_once(dirname(__FILE__)."/../header.php");
 	$abc = "";
