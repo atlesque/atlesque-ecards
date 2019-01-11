@@ -14,23 +14,23 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.0; wp-5.0.2"
 
-#: atlesque-ecards.php:47
+#: atlesque-ecard.php:47
 msgid "Image"
 msgstr "Afbeelding"
 
-#: atlesque-ecards.php:53
+#: atlesque-ecard.php:53
 msgid "Author"
 msgstr "Auteur"
 
-#: atlesque-ecards.php:59
+#: atlesque-ecard.php:59
 msgid "Layout"
 msgstr "Layout"
 
-#: atlesque-ecards.php:65
+#: atlesque-ecard.php:65
 msgid "Music"
 msgstr "Muziek"
 
-#: atlesque-ecards.php:71
+#: atlesque-ecard.php:71
 msgid "Background Color"
 msgstr "Achtergrondkleur"
 

@@ -10,8 +10,8 @@ $value = esc_attr( $name );
 <input type='hidden' id='<?= $name ?>-value' class='small-text' name='meta-box-media[<?= $name ?>]' value='<?= $value ?>' />
 
 <div class="ecard-editor__file-buttons">
-	<input type='button' id='<?= $name ?>' class='button meta-box-upload-button' value='<?= __('Upload', 'atlesque-ecards') ?>' />
-	<input type='button' id='<?= $name ?>-remove' class='button meta-box-upload-button-remove' value='<?= __('Remove', 'atlesque-ecards') ?>' />
+	<input type='button' id='<?= $name ?>' class='button meta-box-upload-button' value='<?= __('Upload', 'atlesque-ecard') ?>' />
+	<input type='button' id='<?= $name ?>-remove' class='button meta-box-upload-button-remove' value='<?= __('Remove', 'atlesque-ecard') ?>' />
 </div>
 
 <div class='ecard-editor__image-preview'>

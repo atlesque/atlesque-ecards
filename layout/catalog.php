@@ -1,9 +1,9 @@
 <?php
-global $post; 
+global $post;
 
-//odudecard-list shortcode function here
+//atlesque-ecard-list shortcode function here
 
-$output='<div class="odude-shop">
+$output='<div class="atlesque-ecard">
 <div id="catalog" class="row-fluid">';
 global $wp_query;
 $postsperpage = 15;
@@ -22,7 +22,6 @@ if(isset($params['layout']))
 else
 	$layout="list";
 
-//query_posts('post_type=odudecard&posts_per_page='.$postsperpage.'&paged='.$wp_query->query_vars['paged'].'&ptype='.$ptype);
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 
 
@@ -30,7 +29,7 @@ $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 if(isset($params['album']))
 {
 $args = array(
-	'post_type' => 'odudecard',
+	'post_type' => 'atlesque-ecard',
 	'paged' => $paged,
 	'posts_per_page' => $postsperpage,
 	'orderby' => $orderby,
@@ -40,38 +39,37 @@ $args = array(
 			'taxonomy' => 'card_cate',
 			'field'    => 'slug',
 			'terms'    => explode(',',$album),
-			//'terms'    => array( 'mobile', 'sports' ),
-		),
-		
+		),		
 	),
 );
 }
 else
 {
 	$args = array(
-	'post_type' => 'odudecard',
+	'post_type' => 'atlesque-ecard',
 	'paged' => $paged,
 	'posts_per_page' => $postsperpage,
 );
 }
 
-$query = new WP_Query($args); 
+$query = new WP_Query($args);
 
 
 
 if(file_exists(PLUGIN_BASE_DIR."/layout/grid/".$layout."/".$layout."_up.php"))
 	$output.=include(PLUGIN_BASE_DIR."/layout/grid/".$layout."/".$layout."_up.php");
 	else
-	$output.=__('Layout Not Found','odude-ecard').": ".$layout;
+	$output.=__('Layout Not Found','atlesque-ecard').": ".$layout;
 
 while($query->have_posts()) : $query->the_post();
 $permalink=get_permalink();
 $thetitle=get_the_title();
-//$image=odudecard_image_src('thumbnail',$post);
-$image=odudecard_image_src_custom('medium',$post); 
+//$image=atlesque_ecard_options_page
+atlesque_ecard_image_src('thumbnail',$post);
+$image = atlesque_ecard_image_src_custom('medium',$post);
 
 if(file_exists(PLUGIN_BASE_DIR."/layout/grid/".$layout."/$layout.php"))
-	$output.=include(PLUGIN_BASE_DIR."/layout/grid/".$layout."/$layout.php"); 
+	$output.=include(PLUGIN_BASE_DIR."/layout/grid/".$layout."/$layout.php");
 
 
 

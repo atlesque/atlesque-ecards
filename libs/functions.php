@@ -1,11 +1,9 @@
 <?php
-function oset_html_content_type() 
+function oset_html_content_type()
 {
-
 	return 'text/html';
 }
-function odudecard_allowed_html() {
- 
+function atlesque_ecard_allowed_html() {
 	$allowed_tags = array(
 		'a' => array(
 			'class' => array(),
@@ -77,24 +75,15 @@ function odudecard_allowed_html() {
 	);
 	
 	return $allowed_tags;
-}		
-
-function odudecard_pro_check()
-{
-	include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-	if ( is_plugin_active( 'odude-card-pro/odude-ecard-pro.php' ) ) 
-		return true;
-	else
-		return false;
 }
 
-function odudecard_set_color($post,$defult)
+function atlesque_ecard_set_color ($post, $default)
 {
-	$all_odudecard_fields= get_post_custom($post->ID);
+	$all_atlesque_ecard_fields = get_post_custom($post->ID);
 	
-	if(isset($all_odudecard_fields["color"][0]) && odudecard_pro_check())
-			echo $all_odudecard_fields["color"][0];
-			else
-			echo $defult;
+	if(isset($all_atlesque_ecard_fields["color"][0]))
+		echo $all_atlesque_ecard_fields["color"][0];
+	else
+		echo $default;
 }
 ?>

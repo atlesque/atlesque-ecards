@@ -1,111 +1,90 @@
 <?php
-function odudecard_post_types()
-{   
-$settings = maybe_unserialize(get_option('_odudecard_settings'));  
-
-	$product=" ";
-
-    register_post_type("odudecard",array(
-            
-            'labels' => array(
-                'name' => __('ODude ECard',"odudecard"),
-                'singular_name' => __('Ecard',"odudecard"),
-                'add_new' => __('Add '.$product.' Ecard',"odudecard"),
-                'add_new_item' => __('Add New '.$product.' Ecard',"odudecard"),
-                'edit_item' => __('Edit '.$product.' Ecard',"odudecard"), 
-                'new_item' => __('New '.$product.' Ecard',"odudecard"),
-                'view_item' => __('View Ecard',"odudecard"),
-                'search_items' => __('Search Ecard',"odudecard"),
-                'not_found' =>  __('No Ecard found',"odudecard"),
-                'not_found_in_trash' => __('No ecard found in Trash',"odudecard"), 
-                'parent_item_colon' => ''
-            ),
-            'public' => true,
-            'publicly_queryable' => true,
-            'has_archive' => true,
-            'show_ui' => true, 
-            'query_var' => true,
-            'rewrite' => array('slug'=>'ecard','with_front'=>true),
-            'capability_type' => 'post',
-            'hierarchical' => false,
-            // 'menu_icon' =>PLUGIN_URL.'/images/odude.png',
-			//'supports' => array('title','editor','author','excerpt','thumbnail','ptype','comments'/*,'custom-fields'*/) ,            
-            'supports' => array('title','editor','card_cate','comments'/*,'custom-fields'*/) ,
-            'taxonomies' => array('card_cate'),
-			'taxonomies' => array('card_tag')
-             
-        )
-    );     
-	
-	       
-    
+function setup_post_types() {
+  $settings = maybe_unserialize(get_option("_atlesque_ecard_settings"));
+  $product=" ";
+  register_post_type("atlesque-ecard", array(
+    "labels" => array(
+      "name" => __("E-Card","atlesque-ecard"),
+      "singular_name" => __("Ecard","atlesque-ecard"),
+      "add_new" => __("Add ".$product." Ecard","atlesque-ecard"),
+      "add_new_item" => __("Add New ".$product." Ecard","atlesque-ecard"),
+      "edit_item" => __("Edit ".$product." Ecard","atlesque-ecard"),
+      "new_item" => __("New ".$product." Ecard","atlesque-ecard"),
+      "view_item" => __("View Ecard","atlesque-ecard"),
+      "search_items" => __("Search Ecard","atlesque-ecard"),
+      "not_found" =>  __("No Ecard found","atlesque-ecard"),
+      "not_found_in_trash" => __("No ecard found in Trash","atlesque-ecard"),
+      "parent_item_colon" => ""),
+    "public" => true,
+    "publicly_queryable" => true,
+    "has_archive" => true,
+    "show_ui" => true,
+    "query_var" => true,
+    "rewrite" => array("slug"=>"ecard","with_front"=>true),
+    "capability_type" => "post",
+    "hierarchical" => false,
+    "supports" => array("title","editor","card_cate","comments"),
+    "taxonomies" => array("card_cate"),
+    "taxonomies" => array("card_tag")
+  ));
 }
 
-
-
-
-function register_ODudeCard_product_taxonomies()
-{
+function register_product_taxonomies() {
   // Add new taxonomy, make it hierarchical (like categories)
   $labels = array(
-    'name' => __( 'Ecard Albums',"odudecard" ),
-    'singular_name' => __( 'Ecard Album',"odudecard"),
-    'search_items' =>  __( 'Search Albums',"odudecard" ),
-    'all_items' => __( 'All Albums',"odudecard" ),
-    'parent_item' => __( 'Parent Album',"odudecard" ),
-    'parent_item_colon' => __( 'Parent Album:',"odudecard" ),
-    'edit_item' => __( 'Edit Album',"odudecard" ), 
-    'update_item' => __( 'Update Album',"odudecard" ),
-    'add_new_item' => __( 'Add New Album',"odudecard" ),
-    'new_item_name' => __( 'New Album Name',"odudecard" ),
-    'menu_name' => __( 'Ecard Albums',"odudecard" ),
-  );     
+    "name" => __( "Ecard Albums","atlesque-ecard" ),
+    "singular_name" => __( "Ecard Album","atlesque-ecard"),
+    "search_items" =>  __( "Search Albums","atlesque-ecard" ),
+    "all_items" => __( "All Albums","atlesque-ecard" ),
+    "parent_item" => __( "Parent Album","atlesque-ecard" ),
+    "parent_item_colon" => __( "Parent Album:","atlesque-ecard" ),
+    "edit_item" => __( "Edit Album","atlesque-ecard" ),
+    "update_item" => __( "Update Album","atlesque-ecard" ),
+    "add_new_item" => __( "Add New Album","atlesque-ecard" ),
+    "new_item_name" => __( "New Album Name","atlesque-ecard" ),
+    "menu_name" => __( "Ecard Albums","atlesque-ecard" ),
+  );
 
-  register_taxonomy('card_cate',array('odudecard'), array(
-    'hierarchical' => true,
-    'labels' => $labels,
-    'show_ui' => true,
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'ecard_album' ),
+  register_taxonomy("card_cate",array("atlesque-ecard"), array(
+    "hierarchical" => true,
+    "labels" => $labels,
+    "show_ui" => true,
+    "query_var" => true,
+    "rewrite" => array( "slug" => "ecard_album" ),
   ));
- 
- 
+
   $labels = array(
-    'name' => __( 'Ecard Tags',"odudecard" ),
-    'singular_name' => __( 'Ecard Tag',"odudecard"),
-    'search_items' =>  __( 'Search Tags',"odudecard" ),
-    'all_items' => __( 'All Tags',"odudecard" ),
-    'parent_item' => __( 'Parent Tag',"odudecard" ),
-    'parent_item_colon' => __( 'Parent Tag:',"odudecard" ),
-    'edit_item' => __( 'Edit Tag',"odudecard" ), 
-    'update_item' => __( 'Update Tag',"odudecard" ),
-    'add_new_item' => __( 'Add New Tag',"odudecard" ),
-    'new_item_name' => __( 'New Tag Name',"odudecard" ),
-    'menu_name' => __( 'Ecard Tags',"odudecard" ),
-  );     
+    "name" => __( "Ecard Tags","atlesque-ecard" ),
+    "singular_name" => __( "Ecard Tag","atlesque-ecard"),
+    "search_items" =>  __( "Search Tags","atlesque-ecard" ),
+    "all_items" => __( "All Tags","atlesque-ecard" ),
+    "parent_item" => __( "Parent Tag","atlesque-ecard" ),
+    "parent_item_colon" => __( "Parent Tag:","atlesque-ecard" ),
+    "edit_item" => __( "Edit Tag","atlesque-ecard" ),
+    "update_item" => __( "Update Tag","atlesque-ecard" ),
+    "add_new_item" => __( "Add New Tag","atlesque-ecard" ),
+    "new_item_name" => __( "New Tag Name","atlesque-ecard" ),
+    "menu_name" => __( "Ecard Tags","atlesque-ecard" ),
+  );
 
-  register_taxonomy('card_tag',array('odudecard'), array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'ecard_tag' ),
+  register_taxonomy("card_tag",array("atlesque-ecard"), array(
+    "hierarchical" => false,
+    "labels" => $labels,
+    "show_ui" => true,
+    "query_var" => true,
+    "rewrite" => array( "slug" => "ecard_tag" ),
   ));
-	
-  
 }
-function odudecard_install()
-{
-	
-	odudecard_post_types();
-    register_ODudeCard_product_taxonomies();
-    flush_rewrite_rules(); 
-		
-	global $wpdb;	
-	$tablename = $wpdb->prefix.'odudecard_view';
-	
-	
-	$qry = "CREATE TABLE IF NOT EXISTS `".$tablename."` (
+
+function atlesque_ecard_install() {
+	setup_post_types();
+  register_product_taxonomies();
+  flush_rewrite_rules();
+
+  global $wpdb;	
+  $tablename = $wpdb->prefix."atlesque_ecard_view";
+
+  $qry = "CREATE TABLE IF NOT EXISTS `".$tablename."` (
   `id` int(15) NOT NULL,
   `SN` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
   `SE` varchar(50) CHARACTER SET utf8 NOT NULL DEFAULT '',
@@ -123,32 +102,29 @@ function odudecard_install()
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8";
 
+$wpdb->query($qry);
 
-	$wpdb->query($qry);
-	
-	
-	if(!$wpdb->get_var("select id from {$wpdb->prefix}posts where post_content like '%[odudecard-pick]%'"))
-	{
-       wp_insert_post(array('post_title'=>'Pick Your Card','post_content'=>'[odudecard-pick]','post_type'=>'page','post_status'=>'publish'));
-	   wp_insert_post(array('post_title'=>'Ecards','post_content'=>'[odudecard-list perrow="3" perpage="30" orderby="date" page="off" layout="list"]','post_type'=>'page','post_status'=>'publish'));
-       
-    }
-	
-
-	
+if(!$wpdb->get_var("select id from {$wpdb->prefix}posts where post_content like '%[atlesque-ecard-pick]%'")) {
+  wp_insert_post(array(
+    "post_title" => "Pick Your Card",
+    "post_content" => "[atlesque-ecard-pick]",
+    "post_type" => "page",
+    "post_status" => "publish")
+);
+  wp_insert_post(array(
+    "post_title" => "Ecards",
+    "post_content" => "[atlesque-ecard-list perrow='3' perpage='30' orderby='date' page='off' layout='list']",
+    "post_type" => "page",
+    "post_status" => "publish")
+);
+}
 }
 
-function odudecard_drop()
-{
-	
+function drop_table() {
 	global $wpdb;	
-	
-	$tablename = $wpdb->prefix.'odudecard_view';
-	
+	$tablename = $wpdb->prefix."atlesque_ecard_view";	
 	$qry = "DROP TABLE ".$tablename;
-			
 	$wpdb->query($qry);
 }
-
 
 ?>
